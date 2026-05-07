@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlcaTEIA | Nossos Planos e Taxas para Parceiros</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              alcateia: {
+                purple: "#5d2275",
+                purpleLight: "#805a90",
+                yellow: "#e7d246",
+                orange: "#e29a46",
+                beige: "#f5e8d8",
+                beigeDark: "#e3d5c5",
+              },
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              serif: ["Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Foco acessível global */
+      *:focus-visible {
+        outline: 4px solid #e7d246; /* alcateia-yellow */
+        outline-offset: 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-alcateia-beige">
+    <header
+      class="bg-white shadow-sm sticky top-0 z-50 border-b border-alcateia-beigeDark"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div
+          class="font-serif text-2xl font-black text-alcateia-purple flex items-center gap-2 tracking-wide"
+        >
+          <svg
+            class="w-8 h-8 text-alcateia-purpleLight"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+          <span class="text-alcateia-purpleLight">AlcaTEIA</span>
+          <span
+            class="ml-3 font-sans text-xs font-bold bg-alcateia-yellow/20 text-alcateia-purple px-3 py-1 rounded-full border border-alcateia-yellow/50"
+          >
+            Para Parceiros
+          </span>
+        </div>
+
+        <nav>
+          <a
+            href="index.html"
+            class="font-sans text-sm font-bold text-gray-500 hover:text-alcateia-purple flex items-center gap-1 transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple"
+          >
+            &larr; Voltar ao Início
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section
+      class="py-16 px-4 text-center bg-white border-b border-alcateia-beigeDark"
+    >
+      <div class="max-w-3xl mx-auto">
+        <h1
+          class="font-serif text-4xl md:text-5xl font-extrabold text-alcateia-purple mb-6 leading-tight"
+        >
+          Transparência total. <br />
+          <span class="text-alcateia-purpleLight"
+            >Cresça junto com a nossa comunidade.</span
+          >
+        </h1>
+        <p class="text-lg text-gray-600 mb-8 font-medium">
+          Sem pegadinhas, sem taxas escondidas. Escolha o modelo que faz mais
+          sentido para o seu momento profissional ou para o seu estabelecimento.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-16 px-4 max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div
+          class="bg-white rounded-3xl border-2 border-alcateia-beigeDark p-8 hover:border-alcateia-purpleLight hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col h-full focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="text-alcateia-purpleLight font-bold text-sm tracking-wider uppercase mb-2"
+          >
+            Para Profissionais Independentes
+          </div>
+          <h3 class="font-serif text-3xl font-bold text-alcateia-purple mb-4">
+            Parceria Flex
+          </h3>
+          <div class="mb-6">
+            <span class="font-sans text-5xl font-black text-gray-900">10%</span>
+            <span class="text-gray-500 font-bold">/por consulta</span>
+          </div>
+          <p class="text-gray-600 mb-8 text-sm font-medium">
+            Risco zero. Você só paga uma pequena taxa administrativa quando um
+            paciente da nossa rede agenda e realiza a consulta com você.
+          </p>
+
+          <ul class="space-y-4 mb-8 flex-1">
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-700 text-sm font-semibold"
+                >Perfil básico no buscador</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-700 text-sm font-semibold"
+                >Agenda online integrada</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-700 text-sm font-semibold"
+                >Mensalidade zero</span
+              >
+            </li>
+          </ul>
+
+          <button
+            class="w-full bg-white border-2 border-alcateia-purple text-alcateia-purple font-bold py-3 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+          >
+            Começar sem risco
+          </button>
+        </div>
+
+        <div
+          class="bg-alcateia-purple rounded-3xl border-2 border-alcateia-purple p-8 shadow-2xl hover:-translate-y-1 transition-all flex flex-col h-full relative transform md:scale-105 z-10 focus-within:ring-2 focus-within:ring-alcateia-yellow focus-within:ring-offset-2"
+        >
+          <div
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-alcateia-yellow text-alcateia-purple text-xs font-black px-4 py-1 rounded-full uppercase tracking-wide shadow-md"
+          >
+            Mais Escolhido
+          </div>
+          <div
+            class="text-alcateia-beigeDark font-bold text-sm tracking-wider uppercase mb-2 mt-2"
+          >
+            Para Clínicas e Agendas Cheias
+          </div>
+          <h3 class="font-serif text-3xl font-bold text-white mb-4">
+            Plano Premium
+          </h3>
+          <div class="mb-6">
+            <span class="font-sans text-5xl font-black text-white">R$ 97</span>
+            <span class="text-alcateia-beigeDark font-bold">/mês</span>
+          </div>
+          <p class="text-alcateia-beige mb-8 text-sm font-medium">
+            Ideal para quem tem volume. Você paga um valor fixo mensal e retém
+            100% do valor das suas consultas particulares.
+          </p>
+
+          <ul class="space-y-4 mb-8 flex-1">
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-alcateia-yellow mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-white text-sm font-semibold"
+                >Zero taxa por agendamento</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-alcateia-yellow mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-white text-sm font-semibold"
+                >Destaque nas buscas na sua região</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-alcateia-yellow mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-white text-sm font-semibold"
+                >Selo "Especialista Verificado"</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-alcateia-yellow mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-white text-sm font-semibold"
+                >Dashboard de gestão de pacientes</span
+              >
+            </li>
+          </ul>
+
+          <button
+            class="w-full bg-alcateia-yellow text-alcateia-purple font-extrabold py-3 rounded-xl hover:bg-yellow-400 transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white"
+          >
+            Assinar Premium
+          </button>
+        </div>
+
+        <div
+          class="bg-white rounded-3xl border-2 border-alcateia-beigeDark p-8 hover:border-alcateia-purpleLight hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col h-full focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="text-green-600 font-bold text-sm tracking-wider uppercase mb-2"
+          >
+            Restaurantes, Parques e Eventos
+          </div>
+          <h3 class="font-serif text-3xl font-bold text-alcateia-purple mb-4">
+            Selo Inclusão
+          </h3>
+          <div class="mb-6">
+            <span class="font-sans text-5xl font-black text-gray-900"
+              >R$ 149</span
+            >
+            <span class="text-gray-500 font-bold">/mês</span>
+          </div>
+          <p class="text-gray-600 mb-8 text-sm font-medium">
+            Traga novas famílias para o seu negócio provando que o seu ambiente
+            é capacitado e acolhedor.
+          </p>
+
+          <ul class="space-y-4 mb-8 flex-1">
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-700 text-sm font-semibold"
+                >Página exclusiva do local com fotos</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-700 text-sm font-semibold"
+                >Auditoria e Selo Digital de Acessibilidade</span
+              >
+            </li>
+            <li class="flex items-start gap-3">
+              <svg
+                class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M5 13l4 4L19 7"
+                ></path>
+              </svg>
+              <span class="text-gray-700 text-sm font-semibold"
+                >Cartilha básica de treinamento para staff</span
+              >
+            </li>
+          </ul>
+
+          <button
+            class="w-full bg-white border-2 border-gray-300 text-gray-700 font-bold py-3 rounded-xl hover:bg-gray-100 hover:border-gray-400 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+          >
+            Solicitar Auditoria
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 bg-white border-t border-alcateia-beigeDark">
+      <div class="max-w-3xl mx-auto">
+        <h2
+          class="font-serif text-3xl font-bold text-center text-alcateia-purple mb-10"
+        >
+          Dúvidas Frequentes
+        </h2>
+        <div class="space-y-4">
+          <div
+            class="bg-alcateia-beige p-6 rounded-2xl shadow-sm border border-alcateia-beigeDark transition-colors hover:border-alcateia-purpleLight"
+          >
+            <h4 class="font-serif font-bold text-lg text-alcateia-purple mb-2">
+              Como funciona a avaliação dos profissionais?
+            </h4>
+            <p class="text-gray-700 text-sm font-medium">
+              Para garantir a qualidade e a segurança das famílias, apenas
+              pacientes que efetivamente agendaram e compareceram à consulta
+              pela plataforma podem deixar uma avaliação verificada.
+            </p>
+          </div>
+          <div
+            class="bg-alcateia-beige p-6 rounded-2xl shadow-sm border border-alcateia-beigeDark transition-colors hover:border-alcateia-purpleLight"
+          >
+            <h4 class="font-serif font-bold text-lg text-alcateia-purple mb-2">
+              No modelo de comissão, quem recebe o pagamento?
+            </h4>
+            <p class="text-gray-700 text-sm font-medium">
+              Nesta fase inicial, o paciente paga o valor da consulta
+              integralmente para você no momento do atendimento. Todo dia 5 do
+              mês seguinte, enviamos um boleto/Pix apenas com o valor referente
+              à nossa taxa de 10% sobre as consultas realizadas.
+            </p>
+          </div>
+          <div
+            class="bg-alcateia-beige p-6 rounded-2xl shadow-sm border border-alcateia-beigeDark transition-colors hover:border-alcateia-purpleLight"
+          >
+            <h4 class="font-serif font-bold text-lg text-alcateia-purple mb-2">
+              Como um local recebe o Selo Inclusão?
+            </h4>
+            <p class="text-gray-700 text-sm font-medium">
+              Nossa equipe realiza uma validação remota e presencial do seu
+              espaço. Avaliamos desde a iluminação e som até a disposição da sua
+              equipe. Estando apto, seu local ganha o selo e o destaque na
+              plataforma.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-alcateia-purple py-10 px-4 text-center text-alcateia-beige"
+    >
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6"
+      >
+        <div
+          class="font-serif text-xl font-bold text-white flex items-center gap-2"
+        >
+          <span class="text-alcateia-yellow">AlcaTEIA</span>
+        </div>
+        <div class="flex gap-6 text-sm font-semibold">
+          <a
+            href="#"
+            class="hover:text-white transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-yellow"
+            >Fale Conosco</a
+          >
+          <a
+            href="#"
+            class="hover:text-white transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-yellow"
+            >Termos de Uso</a
+          >
+          <a
+            href="#"
+            class="hover:text-white transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-yellow"
+            >Privacidade</a
+          >
+        </div>
+        <div class="text-sm font-medium">
+          &copy; 2026 AlcaTEIA Parceiros. Feito por quem vive o dia a dia.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
