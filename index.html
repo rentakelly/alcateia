@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlcaTEIA | Encontre Especialistas e Locais Inclusivos</title>
 
-    <!-- Fontes do Projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Configuração da Paleta ALCATEIA no Tailwind -->
     <script>
       tailwind.config = {
         theme: {
@@ -51,14 +49,12 @@
     </style>
   </head>
   <body class="font-sans text-gray-800 bg-alcateia-beige">
-    <!-- HEADER DO MARKETPLACE -->
     <header
       class="bg-white shadow-sm sticky top-0 z-50 border-b border-alcateia-beigeDark"
     >
       <div
         class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4"
       >
-        <!-- Logo AlcaTEIA -->
         <a
           href="#"
           aria-label="Página inicial da AlcaTEIA"
@@ -75,7 +71,6 @@
           <span class="text-alcateia-purpleLight">AlcaTEIA</span>
         </a>
 
-        <!-- Navegação e Ações Secundárias -->
         <nav class="flex items-center gap-6">
           <a
             href="https://forms.gle/Vq281agjrqTRQmpw9"
@@ -107,7 +102,6 @@
       </div>
     </header>
 
-    <!-- HERO SECTION COM BUSCA -->
     <section
       class="relative bg-gradient-to-br from-alcateia-purple to-alcateia-purpleLight py-24 px-4 overflow-hidden"
     >
@@ -122,7 +116,6 @@
           adaptados para pessoas neurodivergentes.
         </p>
 
-        <!-- BARRA DE BUSCA CENTRAL -->
         <div
           class="bg-white p-3 rounded-2xl md:rounded-full shadow-2xl flex flex-col md:flex-row items-center gap-3"
         >
@@ -189,7 +182,6 @@
           </button>
         </div>
       </div>
-      <!-- Padrão de fundo discreto -->
       <div
         class="absolute inset-0 opacity-5"
         style="
@@ -200,28 +192,23 @@
       ></div>
     </section>
 
-    <!-- VITRINE: CARDS DE DESTAQUE -->
-    <section class="py-20 px-4 max-w-7xl mx-auto">
-      <div class="flex justify-between items-end mb-10">
-        <div>
-          <h2 class="font-serif text-3xl font-bold text-alcateia-purple">
-            Especialistas e Locais em Destaque
-          </h2>
-          <p class="text-gray-600 mt-2 font-medium">
-            Avaliações reais feitas por famílias da nossa comunidade.
-          </p>
-        </div>
-        <a
-          href="#"
-          class="hidden md:inline-block font-bold text-alcateia-purple hover:text-alcateia-purpleLight transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple"
-          >Ver todos &rarr;</a
+    <section class="pt-20 pb-10 px-4 max-w-7xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4 mb-8"
+      >
+        <h2
+          class="font-sans text-4xl font-extrabold text-alcateia-purple tracking-tight"
         >
+          Saúde
+        </h2>
+        <p class="font-sans text-alcateia-purple font-bold text-lg">
+          Terapia Ocupacional, Psicólogo e outras
+        </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Card 1: Profissional -->
+      <div class="flex flex-col md:flex-row gap-6 md:gap-6 items-center">
         <article
-          class="bg-white rounded-2xl border border-alcateia-beigeDark overflow-hidden hover:border-alcateia-purpleLight hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
         >
           <div class="h-32 bg-alcateia-beige relative">
             <div class="absolute -bottom-10 left-6">
@@ -267,9 +254,8 @@
           </div>
         </article>
 
-        <!-- Card 2: Clínica / Equipe Multidisciplinar -->
         <article
-          class="bg-white rounded-2xl border border-alcateia-beigeDark overflow-hidden hover:border-alcateia-purpleLight hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
         >
           <div class="h-32 bg-alcateia-beige relative">
             <div
@@ -324,16 +310,15 @@
           </div>
         </article>
 
-        <!-- Card 3: Lazer Adaptado -->
         <article
-          class="bg-white rounded-2xl border border-alcateia-beigeDark overflow-hidden hover:border-alcateia-purpleLight hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
         >
           <div
             class="h-32 relative bg-cover bg-center"
             style="
-              background-image: url(&quot;https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
+              background-image: url(&quot;https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
             "
-            aria-label="Imagem do Parque das Cores"
+            aria-label="Imagem de saúde"
           >
             <div class="absolute inset-0 bg-alcateia-purple/20"></div>
             <div
@@ -345,43 +330,463 @@
           <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
             <div class="flex justify-between items-start mb-2">
               <h3 class="font-serif font-bold text-xl text-alcateia-purple">
-                Parque das Cores
+                Instituto Desenvolver
               </h3>
               <div
                 class="flex items-center text-alcateia-orange text-sm font-bold"
                 aria-label="Avaliação 4.8 de 5"
               >
                 <span aria-hidden="true">★ 4.8</span>
-                <span class="text-gray-400 font-normal ml-1">(118)</span>
+                <span class="text-gray-400 font-normal ml-1">(89)</span>
               </div>
             </div>
-            <p class="text-sm text-gray-500 font-bold mb-4">
-              Lazer • Restaurante • Play
-            </p>
+            <p class="text-sm text-gray-500 font-bold mb-4">Saúde Integrada</p>
             <p class="text-gray-700 text-sm mb-6 line-clamp-2">
-              Oferece abafadores de ruído na recepção, espaço de descompressão e
-              cardápio em PECS.
+              Clínica especializada com salas adaptadas de integração sensorial.
             </p>
             <div class="mt-auto">
               <button
                 class="w-full bg-alcateia-beige text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-beigeDark transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
               >
-                Ver Detalhes do Local
+                Ver Perfil e Agendar
               </button>
             </div>
           </div>
         </article>
+
+        <div
+          class="hidden md:flex flex-col items-center justify-center flex-shrink-0 w-24"
+        >
+          <a
+            href="#"
+            aria-label="Ver mais opções de Saúde"
+            title="Ver mais"
+            class="flex flex-col items-center gap-3 group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow rounded-xl p-2 transition-all"
+          >
+            <div
+              class="w-[70px] h-[70px] bg-alcateia-purple rounded-full flex items-center justify-center text-white group-hover:bg-alcateia-purpleLight transition-colors shadow-md group-hover:shadow-lg"
+            >
+              <svg
+                class="w-8 h-8 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
+            <span
+              class="text-alcateia-purple font-bold text-base group-hover:text-alcateia-purpleLight transition-colors"
+              >ver mais</span
+            >
+          </a>
+        </div>
       </div>
-      <div class="text-center mt-10 md:hidden">
+
+      <div class="text-center mt-8 md:hidden w-full">
         <a
           href="#"
-          class="inline-block font-bold text-alcateia-purple hover:text-alcateia-purpleLight border-2 border-alcateia-purple rounded-full px-6 py-2 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
-          >Ver todos os resultados</a
+          class="inline-block font-bold text-lg text-alcateia-purple border-2 border-alcateia-purple rounded-full px-12 py-3 hover:bg-alcateia-purple hover:text-white transition-all shadow-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
         >
+          Ver mais opções de Saúde
+        </a>
       </div>
     </section>
 
-    <!-- CALL TO ACTION (OFERTA B2B) -->
+    <section class="py-10 px-4 max-w-7xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4 mb-8"
+      >
+        <h2
+          class="font-sans text-4xl font-extrabold text-alcateia-purple tracking-tight"
+        >
+          Esportes
+        </h2>
+        <p class="font-sans text-alcateia-purple font-bold text-lg">
+          Judô, Equinoterapia, Natação e outras
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6 md:gap-6 items-center">
+        <article
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="h-32 relative bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1519861531473-9200262188bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
+            "
+          >
+            <div class="absolute inset-0 bg-alcateia-purple/20"></div>
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-alcateia-purple shadow-sm"
+            >
+              Judô Inclusivo
+            </div>
+          </div>
+          <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Sensei Carlos
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 5.0 de 5"
+              >
+                <span aria-hidden="true">★ 5.0</span>
+                <span class="text-gray-400 font-normal ml-1">(41)</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 font-bold mb-4">
+              Artes Marciais Adaptadas
+            </p>
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
+              Aulas focadas no desenvolvimento da coordenação motora e
+              disciplina, com turmas reduzidas.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="w-full border-2 border-alcateia-purple text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+              >
+                Ver Perfil
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="h-32 relative bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
+            "
+          >
+            <div class="absolute inset-0 bg-alcateia-purple/20"></div>
+            <div
+              class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm z-10"
+            >
+              Selo Inclusão
+            </div>
+          </div>
+          <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Rancho Terapêutico
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 4.9 de 5"
+              >
+                <span aria-hidden="true">★ 4.9</span>
+                <span class="text-gray-400 font-normal ml-1">(60)</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 font-bold mb-4">Equinoterapia</p>
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
+              Profissionais capacitados e cavalos treinados para terapia
+              assistida. Ambiente calmo na natureza.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="w-full border-2 border-alcateia-purple text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+              >
+                Ver Local
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="h-32 relative bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1530549387789-4c1017266635?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
+            "
+          >
+            <div class="absolute inset-0 bg-alcateia-purple/20"></div>
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-alcateia-purple shadow-sm"
+            >
+              Natação
+            </div>
+          </div>
+          <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Aqua Azul
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 4.7 de 5"
+              >
+                <span aria-hidden="true">★ 4.7</span>
+                <span class="text-gray-400 font-normal ml-1">(29)</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 font-bold mb-4">Esporte e Lazer</p>
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
+              Piscina aquecida, vestiários familiares amplos e instrutores com
+              treinamento em TEA.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="w-full bg-alcateia-beige text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-beigeDark transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+              >
+                Ver Local
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <div
+          class="hidden md:flex flex-col items-center justify-center flex-shrink-0 w-24"
+        >
+          <a
+            href="#"
+            aria-label="Ver mais opções de Esportes"
+            title="Ver mais"
+            class="flex flex-col items-center gap-3 group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow rounded-xl p-2 transition-all"
+          >
+            <div
+              class="w-[70px] h-[70px] bg-alcateia-purple rounded-full flex items-center justify-center text-white group-hover:bg-alcateia-purpleLight transition-colors shadow-md group-hover:shadow-lg"
+            >
+              <svg
+                class="w-8 h-8 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
+            <span
+              class="text-alcateia-purple font-bold text-base group-hover:text-alcateia-purpleLight transition-colors"
+              >ver mais</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 md:hidden w-full">
+        <a
+          href="#"
+          class="inline-block font-bold text-lg text-alcateia-purple border-2 border-alcateia-purple rounded-full px-12 py-3 hover:bg-alcateia-purple hover:text-white transition-all shadow-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+        >
+          Ver mais opções de Esportes
+        </a>
+      </div>
+    </section>
+
+    <section class="pt-10 pb-20 px-4 max-w-7xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4 mb-8"
+      >
+        <h2
+          class="font-sans text-4xl font-extrabold text-alcateia-purple tracking-tight"
+        >
+          Outros serviços
+        </h2>
+        <p class="font-sans text-alcateia-purple font-bold text-lg">
+          Odontologia, Estética, etc.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-6 md:gap-6 items-center">
+        <article
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="h-32 relative bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
+            "
+          >
+            <div class="absolute inset-0 bg-alcateia-purple/20"></div>
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-alcateia-purple shadow-sm"
+            >
+              Odontopediatria
+            </div>
+          </div>
+          <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Dra. Fernanda Lira
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 5.0 de 5"
+              >
+                <span aria-hidden="true">★ 5.0</span>
+                <span class="text-gray-400 font-normal ml-1">(105)</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 font-bold mb-4">Saúde Bucal</p>
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
+              Consultório sem ruídos, uso de comunicação visual, sedação
+              consciente e muito acolhimento.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="w-full border-2 border-alcateia-purple text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+              >
+                Ver Perfil e Agendar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div class="h-32 bg-alcateia-beige relative">
+            <div
+              class="absolute -bottom-10 left-6 bg-white w-20 h-20 rounded-xl border-4 border-white shadow-sm flex items-center justify-center text-alcateia-purple font-serif font-bold text-2xl"
+              aria-hidden="true"
+            >
+              C&B
+            </div>
+            <div
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-alcateia-purple shadow-sm"
+            >
+              Barbearia
+            </div>
+          </div>
+          <div class="pt-14 pb-6 px-6 flex-1 flex flex-col">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Corte & Brincadeira
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 4.9 de 5"
+              >
+                <span aria-hidden="true">★ 4.9</span>
+                <span class="text-gray-400 font-normal ml-1">(88)</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 font-bold mb-4">
+              Estética Infantil
+            </p>
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
+              Especialistas em corte de cabelo para crianças com sensibilidade
+              sensorial. Cadeiras adaptadas.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="w-full border-2 border-alcateia-purple text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+              >
+                Ver Perfil e Agendar
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-full md:flex-1 bg-white rounded-2xl border-2 border-alcateia-purpleLight overflow-hidden hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
+        >
+          <div
+            class="h-32 relative bg-cover bg-center"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
+            "
+          >
+            <div class="absolute inset-0 bg-alcateia-purple/20"></div>
+            <div
+              class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm z-10"
+            >
+              Selo Inclusão
+            </div>
+          </div>
+          <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Estúdio Calma
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 4.8 de 5"
+              >
+                <span aria-hidden="true">★ 4.8</span>
+                <span class="text-gray-400 font-normal ml-1">(34)</span>
+              </div>
+            </div>
+            <p class="text-sm text-gray-500 font-bold mb-4">Yoga Adaptado</p>
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
+              Sessões de relaxamento e yoga para pais, mães e crianças. Foco no
+              controle da ansiedade.
+            </p>
+            <div class="mt-auto">
+              <button
+                class="w-full bg-alcateia-beige text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-beigeDark transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+              >
+                Ver Local
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <div
+          class="hidden md:flex flex-col items-center justify-center flex-shrink-0 w-24"
+        >
+          <a
+            href="#"
+            aria-label="Ver mais opções de Outros Serviços"
+            title="Ver mais"
+            class="flex flex-col items-center gap-3 group focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow rounded-xl p-2 transition-all"
+          >
+            <div
+              class="w-[70px] h-[70px] bg-alcateia-purple rounded-full flex items-center justify-center text-white group-hover:bg-alcateia-purpleLight transition-colors shadow-md group-hover:shadow-lg"
+            >
+              <svg
+                class="w-8 h-8 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+            </div>
+            <span
+              class="text-alcateia-purple font-bold text-base group-hover:text-alcateia-purpleLight transition-colors"
+              >ver mais</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 md:hidden w-full">
+        <a
+          href="#"
+          class="inline-block font-bold text-lg text-alcateia-purple border-2 border-alcateia-purple rounded-full px-12 py-3 hover:bg-alcateia-purple hover:text-white transition-all shadow-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
+        >
+          Ver mais serviços
+        </a>
+      </div>
+    </section>
+
     <section class="py-16 px-4 bg-white border-t border-alcateia-beigeDark">
       <div
         class="max-w-5xl mx-auto bg-alcateia-beige rounded-3xl shadow-sm border border-alcateia-beigeDark p-8 md:p-12 flex flex-col md:flex-row items-center gap-10"
@@ -430,7 +835,6 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer
       class="bg-alcateia-purple py-12 px-4 text-center text-alcateia-beige"
     >
