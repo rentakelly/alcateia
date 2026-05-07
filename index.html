@@ -4,54 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AlcaTEIA | Encontre Especialistas e Locais Inclusivos</title>
+
+    <!-- Fontes do Projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração da Paleta ALCATEIA no Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              alcateia: {
+                purple: "#5d2275",
+                purpleLight: "#805a90",
+                yellow: "#e7d246",
+                orange: "#e29a46",
+                beige: "#f5e8d8",
+                beigeDark: "#e3d5c5",
+              },
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              serif: ["Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
     <style>
       html {
         scroll-behavior: smooth;
       }
+      /* Foco acessível global */
+      *:focus-visible {
+        outline: 4px solid #e7d246; /* alcateia-yellow */
+        outline-offset: 4px;
+        border-radius: 4px;
+      }
     </style>
   </head>
-  <body class="font-sans text-gray-800 bg-gray-50">
+  <body class="font-sans text-gray-800 bg-alcateia-beige">
     <!-- HEADER DO MARKETPLACE -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header
+      class="bg-white shadow-sm sticky top-0 z-50 border-b border-alcateia-beigeDark"
+    >
       <div
         class="max-w-7xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center gap-4"
       >
-        <!-- Logo -->
-        <div
-          class="text-2xl font-black text-blue-600 flex items-center gap-2 cursor-pointer"
+        <!-- Logo AlcaTEIA -->
+        <a
+          href="#"
+          aria-label="Página inicial da AlcaTEIA"
+          class="font-serif text-2xl font-black text-alcateia-purple flex items-center gap-2 hover:opacity-90 transition-opacity tracking-wide rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple"
         >
           <svg
-            class="w-8 h-8 text-indigo-500"
+            class="w-8 h-8 text-alcateia-purpleLight"
             fill="currentColor"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
           </svg>
-          Alca<span class="text-indigo-500">TEIA</span>
-        </div>
+          <span class="text-alcateia-purpleLight">AlcaTEIA</span>
+        </a>
 
         <!-- Navegação e Ações Secundárias -->
         <nav class="flex items-center gap-6">
           <a
-            href="#"
-            class="text-sm font-medium text-gray-600 hover:text-blue-600 hidden md:block"
+            href="https://forms.gle/Vq281agjrqTRQmpw9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm font-bold text-gray-600 hover:text-alcateia-purple hidden md:block transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple p-1"
             >Sou Profissional</a
           >
           <a
             href="#"
-            class="text-sm font-medium text-gray-600 hover:text-blue-600 hidden md:block"
+            class="text-sm font-bold text-gray-600 hover:text-alcateia-purple hidden md:block transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple p-1"
             >Ajuda</a
           >
           <div class="flex items-center gap-3">
             <a
               href="#"
-              class="text-sm font-semibold text-blue-600 hover:text-blue-800"
+              class="text-sm font-bold text-alcateia-purple hover:text-alcateia-purpleLight transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple p-1"
               >Entrar</a
             >
             <a
-              href="#"
-              class="bg-blue-600 text-white text-sm font-bold py-2 px-5 rounded-full hover:bg-blue-700 transition-colors"
+              href="https://forms.gle/Vq281agjrqTRQmpw9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-alcateia-purple text-white text-sm font-bold py-2 px-5 rounded-full hover:bg-alcateia-purpleLight transition-colors shadow-sm focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
               >Cadastrar</a
             >
           </div>
@@ -59,17 +107,17 @@
       </div>
     </header>
 
-    <!-- HERO SECTION COM BUSCA (O Coração do Marketplace) -->
+    <!-- HERO SECTION COM BUSCA -->
     <section
-      class="relative bg-gradient-to-br from-indigo-900 to-blue-800 py-24 px-4 overflow-hidden"
+      class="relative bg-gradient-to-br from-alcateia-purple to-alcateia-purpleLight py-24 px-4 overflow-hidden"
     >
       <div class="max-w-4xl mx-auto text-center relative z-10">
         <h1
-          class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6"
+          class="font-serif text-4xl md:text-5xl font-bold text-white leading-tight mb-6"
         >
           Encontre o cuidado e o respeito que a sua família merece.
         </h1>
-        <p class="text-lg md:text-xl text-blue-100 mb-10">
+        <p class="text-lg md:text-xl text-alcateia-beige mb-10">
           A maior rede de profissionais verificados, terapias e locais de lazer
           adaptados para pessoas neurodivergentes.
         </p>
@@ -79,13 +127,14 @@
           class="bg-white p-3 rounded-2xl md:rounded-full shadow-2xl flex flex-col md:flex-row items-center gap-3"
         >
           <div
-            class="w-full md:w-1/2 flex items-center pl-4 bg-gray-50 rounded-full border border-transparent focus-within:border-blue-500 focus-within:bg-white transition-all"
+            class="w-full md:w-1/2 flex items-center pl-4 bg-alcateia-beige rounded-full border-2 border-transparent focus-within:border-alcateia-purple transition-all"
           >
             <svg
-              class="w-5 h-5 text-gray-400"
+              class="w-5 h-5 text-gray-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -96,19 +145,21 @@
             </svg>
             <input
               type="text"
+              aria-label="Buscar por especialidade ou necessidade"
               placeholder="Ex: Fonoaudiologia, TEA, Parques..."
-              class="w-full bg-transparent py-3 px-3 text-gray-700 focus:outline-none rounded-full"
+              class="w-full bg-transparent py-3 px-3 text-gray-800 font-medium focus:outline-none rounded-full"
             />
           </div>
 
           <div
-            class="w-full md:w-1/3 flex items-center pl-4 bg-gray-50 rounded-full border border-transparent focus-within:border-blue-500 focus-within:bg-white transition-all"
+            class="w-full md:w-1/3 flex items-center pl-4 bg-alcateia-beige rounded-full border-2 border-transparent focus-within:border-alcateia-purple transition-all"
           >
             <svg
-              class="w-5 h-5 text-gray-400"
+              class="w-5 h-5 text-gray-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -125,25 +176,27 @@
             </svg>
             <input
               type="text"
+              aria-label="Buscar por cidade ou bairro"
               placeholder="Qual cidade ou bairro?"
-              class="w-full bg-transparent py-3 px-3 text-gray-700 focus:outline-none rounded-full"
+              class="w-full bg-transparent py-3 px-3 text-gray-800 font-medium focus:outline-none rounded-full"
             />
           </div>
 
           <button
-            class="w-full md:w-auto bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors shadow-md"
+            class="w-full md:w-auto bg-alcateia-yellow text-alcateia-purple font-bold py-3 px-8 rounded-full hover:bg-yellow-400 transition-colors shadow-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-purple"
           >
             Buscar
           </button>
         </div>
       </div>
-      <!-- Padrão de fundo (opcional) -->
+      <!-- Padrão de fundo discreto -->
       <div
-        class="absolute inset-0 opacity-10"
+        class="absolute inset-0 opacity-5"
         style="
           background-image: radial-gradient(#fff 1px, transparent 1px);
           background-size: 20px 20px;
         "
+        aria-hidden="true"
       ></div>
     </section>
 
@@ -151,171 +204,193 @@
     <section class="py-20 px-4 max-w-7xl mx-auto">
       <div class="flex justify-between items-end mb-10">
         <div>
-          <h2 class="text-3xl font-bold text-gray-900">
+          <h2 class="font-serif text-3xl font-bold text-alcateia-purple">
             Especialistas e Locais em Destaque
           </h2>
-          <p class="text-gray-600 mt-2">
+          <p class="text-gray-600 mt-2 font-medium">
             Avaliações reais feitas por famílias da nossa comunidade.
           </p>
         </div>
         <a
           href="#"
-          class="hidden md:inline-block font-semibold text-blue-600 hover:text-blue-800"
+          class="hidden md:inline-block font-bold text-alcateia-purple hover:text-alcateia-purpleLight transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-purple"
           >Ver todos &rarr;</a
         >
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Card 1: Profissional -->
-        <div
-          class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow flex flex-col"
+        <article
+          class="bg-white rounded-2xl border border-alcateia-beigeDark overflow-hidden hover:border-alcateia-purpleLight hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
         >
-          <div class="h-32 bg-gray-100 relative">
+          <div class="h-32 bg-alcateia-beige relative">
             <div class="absolute -bottom-10 left-6">
               <img
                 src="https://i.pravatar.cc/150?img=32"
-                alt="Dra. Marina"
+                alt="Foto da Dra. Marina Silva"
                 class="w-20 h-20 rounded-full border-4 border-white object-cover shadow-sm"
               />
             </div>
-            <!-- Tag Especialidade -->
             <div
-              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-indigo-600 shadow-sm"
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-alcateia-purple shadow-sm"
             >
               Saúde Mental
             </div>
           </div>
           <div class="pt-14 pb-6 px-6 flex-1 flex flex-col">
             <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-xl text-gray-900">Dra. Marina Silva</h3>
-              <div class="flex items-center text-yellow-400 text-sm font-bold">
-                ★ 4.9 <span class="text-gray-400 font-normal ml-1">(24)</span>
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Dra. Marina Silva
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 4.9 de 5"
+              >
+                <span aria-hidden="true">★ 4.9</span>
+                <span class="text-gray-400 font-normal ml-1">(24)</span>
               </div>
             </div>
-            <p class="text-sm text-gray-500 font-medium mb-4">
+            <p class="text-sm text-gray-500 font-bold mb-4">
               Psicopedagoga Espec. em Autismo
             </p>
-            <p class="text-gray-600 text-sm mb-6 line-clamp-2">
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
               Atendimento lúdico focado em intervenção precoce e suporte
               familiar integral.
             </p>
             <div class="mt-auto">
               <button
-                class="w-full border-2 border-blue-600 text-blue-600 font-bold py-2 rounded-xl hover:bg-blue-50 transition-colors"
+                class="w-full border-2 border-alcateia-purple text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
               >
                 Ver Perfil e Agendar
               </button>
             </div>
           </div>
-        </div>
+        </article>
 
         <!-- Card 2: Clínica / Equipe Multidisciplinar -->
-        <div
-          class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow flex flex-col"
+        <article
+          class="bg-white rounded-2xl border border-alcateia-beigeDark overflow-hidden hover:border-alcateia-purpleLight hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
         >
-          <div class="h-32 bg-indigo-50 relative">
+          <div class="h-32 bg-alcateia-beige relative">
             <div
-              class="absolute -bottom-10 left-6 bg-white w-20 h-20 rounded-xl border-4 border-white shadow-sm flex items-center justify-center text-indigo-500 font-bold text-2xl"
+              class="absolute -bottom-10 left-6 bg-white w-20 h-20 rounded-xl border-4 border-white shadow-sm flex items-center justify-center text-alcateia-purple font-serif font-bold text-2xl"
+              aria-hidden="true"
             >
               CC
             </div>
             <div
-              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-blue-600 shadow-sm"
+              class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-alcateia-purple shadow-sm"
             >
               Clínica
             </div>
           </div>
           <div class="pt-14 pb-6 px-6 flex-1 flex flex-col">
             <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-xl text-gray-900">Clínica Caminhos</h3>
-              <div class="flex items-center text-yellow-400 text-sm font-bold">
-                ★ 5.0 <span class="text-gray-400 font-normal ml-1">(52)</span>
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Clínica Caminhos
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 5.0 de 5"
+              >
+                <span aria-hidden="true">★ 5.0</span>
+                <span class="text-gray-400 font-normal ml-1">(52)</span>
               </div>
             </div>
-            <p class="text-sm text-gray-500 font-medium mb-4">
+            <p class="text-sm text-gray-500 font-bold mb-4">
               Equipe Multidisciplinar
             </p>
             <div class="flex flex-wrap gap-2 mb-6">
-              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded"
+              <span
+                class="bg-alcateia-yellow/20 text-alcateia-purple font-semibold text-xs px-2 py-1 rounded"
                 >Fono</span
               >
-              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded"
+              <span
+                class="bg-alcateia-yellow/20 text-alcateia-purple font-semibold text-xs px-2 py-1 rounded"
                 >T.O.</span
               >
-              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded"
+              <span
+                class="bg-alcateia-yellow/20 text-alcateia-purple font-semibold text-xs px-2 py-1 rounded"
                 >Psicologia</span
               >
             </div>
             <div class="mt-auto">
               <button
-                class="w-full border-2 border-blue-600 text-blue-600 font-bold py-2 rounded-xl hover:bg-blue-50 transition-colors"
+                class="w-full border-2 border-alcateia-purple text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-purple hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
               >
                 Ver Perfil e Agendar
               </button>
             </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Card 3: Lazer Adaptado (A hipótese nova) -->
-        <div
-          class="bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow flex flex-col"
+        <!-- Card 3: Lazer Adaptado -->
+        <article
+          class="bg-white rounded-2xl border border-alcateia-beigeDark overflow-hidden hover:border-alcateia-purpleLight hover:shadow-lg transition-all flex flex-col focus-within:ring-2 focus-within:ring-alcateia-purple focus-within:ring-offset-2"
         >
           <div
-            class="h-32 bg-green-100 relative bg-cover bg-center"
+            class="h-32 relative bg-cover bg-center"
             style="
               background-image: url(&quot;https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80&quot;);
             "
+            aria-label="Imagem do Parque das Cores"
           >
-            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="absolute inset-0 bg-alcateia-purple/20"></div>
             <div
-              class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm z-10"
+              class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm z-10"
             >
               Selo Inclusão
             </div>
           </div>
           <div class="pt-6 pb-6 px-6 flex-1 flex flex-col">
             <div class="flex justify-between items-start mb-2">
-              <h3 class="font-bold text-xl text-gray-900">Parque das Cores</h3>
-              <div class="flex items-center text-yellow-400 text-sm font-bold">
-                ★ 4.8 <span class="text-gray-400 font-normal ml-1">(118)</span>
+              <h3 class="font-serif font-bold text-xl text-alcateia-purple">
+                Parque das Cores
+              </h3>
+              <div
+                class="flex items-center text-alcateia-orange text-sm font-bold"
+                aria-label="Avaliação 4.8 de 5"
+              >
+                <span aria-hidden="true">★ 4.8</span>
+                <span class="text-gray-400 font-normal ml-1">(118)</span>
               </div>
             </div>
-            <p class="text-sm text-gray-500 font-medium mb-4">
+            <p class="text-sm text-gray-500 font-bold mb-4">
               Lazer • Restaurante • Play
             </p>
-            <p class="text-gray-600 text-sm mb-6 line-clamp-2">
+            <p class="text-gray-700 text-sm mb-6 line-clamp-2">
               Oferece abafadores de ruído na recepção, espaço de descompressão e
               cardápio em PECS.
             </p>
             <div class="mt-auto">
               <button
-                class="w-full bg-gray-100 text-gray-800 font-bold py-2 rounded-xl hover:bg-gray-200 transition-colors"
+                class="w-full bg-alcateia-beige text-alcateia-purple font-bold py-2 rounded-xl hover:bg-alcateia-beigeDark transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
               >
                 Ver Detalhes do Local
               </button>
             </div>
           </div>
-        </div>
+        </article>
       </div>
       <div class="text-center mt-10 md:hidden">
         <a
           href="#"
-          class="inline-block font-semibold text-blue-600 hover:text-blue-800 border border-blue-600 rounded-full px-6 py-2"
+          class="inline-block font-bold text-alcateia-purple hover:text-alcateia-purpleLight border-2 border-alcateia-purple rounded-full px-6 py-2 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
           >Ver todos os resultados</a
         >
       </div>
     </section>
 
     <!-- CALL TO ACTION (OFERTA B2B) -->
-    <section class="py-16 px-4 bg-blue-50 border-t border-blue-100">
+    <section class="py-16 px-4 bg-white border-t border-alcateia-beigeDark">
       <div
-        class="max-w-5xl mx-auto bg-white rounded-3xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-10"
+        class="max-w-5xl mx-auto bg-alcateia-beige rounded-3xl shadow-sm border border-alcateia-beigeDark p-8 md:p-12 flex flex-col md:flex-row items-center gap-10"
       >
         <div class="flex-1 text-center md:text-left">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+          <h2 class="font-serif text-3xl font-bold text-alcateia-purple mb-4">
             Você é um profissional da saúde ou gerencia um local inclusivo?
           </h2>
-          <p class="text-gray-600 mb-8 text-lg">
+          <p class="text-gray-700 mb-8 text-lg font-medium">
             Conecte-se com milhares de famílias que buscam ativamente por
             profissionais qualificados e ambientes acolhedores. Aumente sua
             visibilidade e lote sua agenda.
@@ -324,27 +399,29 @@
             class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
           >
             <a
-              href="#"
-              class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors shadow-md text-center"
+              href="https://forms.gle/Vq281agjrqTRQmpw9"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-alcateia-purple text-white font-bold py-3 px-8 rounded-full hover:bg-alcateia-purpleLight transition-colors shadow-md text-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
             >
               Cadastrar meu Perfil
             </a>
             <a
               href="#"
-              class="bg-white text-blue-600 border border-blue-200 font-bold py-3 px-8 rounded-full hover:bg-blue-50 transition-colors text-center"
+              class="bg-white text-alcateia-purple border-2 border-alcateia-purple font-bold py-3 px-8 rounded-full hover:bg-alcateia-beige transition-colors text-center focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-alcateia-yellow"
             >
               Entender as Taxas
             </a>
           </div>
         </div>
         <div class="hidden md:block w-1/3">
-          <!-- Ilustração simples via CSS -->
           <div
-            class="relative w-full aspect-square bg-indigo-100 rounded-full flex items-center justify-center"
+            class="relative w-full aspect-square bg-white rounded-full border-4 border-alcateia-beigeDark flex items-center justify-center shadow-sm"
+            aria-hidden="true"
           >
             <div class="text-6xl">👩‍⚕️</div>
             <div
-              class="absolute -bottom-4 -right-4 bg-green-400 text-white font-bold p-4 rounded-full border-4 border-white shadow-lg text-xl"
+              class="absolute -bottom-4 -right-4 bg-alcateia-yellow text-alcateia-purple font-bold p-4 rounded-full border-4 border-white shadow-md text-xl"
             >
               ✓
             </div>
@@ -354,21 +431,35 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 py-12 px-4 text-center text-gray-400">
+    <footer
+      class="bg-alcateia-purple py-12 px-4 text-center text-alcateia-beige"
+    >
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6"
       >
-        <div class="text-xl font-bold text-white flex items-center gap-2">
-          Alca<span class="text-indigo-400">TEIA</span>
+        <div
+          class="font-serif text-xl font-bold text-white flex items-center gap-2"
+        >
+          <span class="text-alcateia-yellow">AlcaTEIA</span>
         </div>
-        <div class="flex gap-6 text-sm">
-          <a href="#" class="hover:text-white transition-colors">Sobre</a>
-          <a href="#" class="hover:text-white transition-colors"
+        <div class="flex gap-6 text-sm font-semibold">
+          <a
+            href="#"
+            class="hover:text-white transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-yellow"
+            >Sobre</a
+          >
+          <a
+            href="#"
+            class="hover:text-white transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-yellow"
             >Termos de Uso</a
           >
-          <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+          <a
+            href="#"
+            class="hover:text-white transition-colors rounded p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-alcateia-yellow"
+            >Privacidade</a
+          >
         </div>
-        <div class="text-sm">
+        <div class="text-sm font-medium">
           &copy; 2026 AlcaTEIA. Feito por quem vive o dia a dia.
         </div>
       </div>
